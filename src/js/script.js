@@ -2,9 +2,13 @@ const slider = tns({
     container: '.carousel__inner',
     items: 1,
     slideBy: 'page',
-    autoplay: false,
+    speed: 1200,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
     controls: false,
     nav: false,
+
 });
 
 document.querySelector('.prev').addEventListener('click', function () {
