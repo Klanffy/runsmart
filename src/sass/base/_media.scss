@@ -1,7 +1,13 @@
+@media (max-width: 1099px) {
+    .prev, .next {
+        display: none;
+    }
+}
+
 @media (max-width: 991px) {
     .header {
         margin: 0 auto;
-        width: 90%;
+        width: 100px;
     }
     .promo {
         &__wrapper {
@@ -21,8 +27,21 @@
         margin: 0 auto;
         margin-top: 36px;
     }
+    .reviews {
+        &__content {
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
 }
 
+@media (max-width: 899px) {
+    .catalog {
+        &__content {
+            justify-content: space-around;
+        }
+    }
+}
 @media (max-width: 767px) {
     .header {
         &__official {
@@ -52,6 +71,46 @@
     }
     .title_left {
         font-size: 25px;
+    }
+    .carousel {
+        .tns-item {
+            img {
+                width: 90%;
+            }
+        }
+    }
+    .catalog {
+        &__tabs {
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 70px;
+        }
+    }
+    .reviews {
+        &__content {
+            align-items: flex-start;
+        }
+    }
+}
+
+@media (max-width: 599px) {
+    .catalog {
+        &__tab {
+            font-size: 17px;
+        }
+    }
+    .reviews {
+        &__content {
+            flex-direction: column;
+        }
+        &__photo {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+        &__name, &__term {
+            text-align: center;
+        }
     }
 }
 
@@ -96,6 +155,11 @@
         text-align: center;
         font-size: 21px;
     }
+    .catalog {
+        &__tab {
+            font-size: 16px;
+        }
+    }
 }
 
 @media (max-width: 499px) {
@@ -105,6 +169,43 @@
             &:nth-child(2) {
                 margin-top: 65px;
             }
+        }
+    }
+    .catalog {
+        &__tab {
+            font-size: 13px;
+        }
+    }
+}
+
+@media (max-width: 429px) {
+    .catalog {
+        &__tab {
+            font-size: 12px;
+        }
+    }
+}
+
+@media (max-width: 399px) {
+    .catalog {
+        &__tab {
+            font-size: 11px;
+        }
+    }
+}
+
+@media (max-width: 359px) {
+    .catalog {
+        &__tab {
+            font-size: 10px;
+        }
+    }
+}
+
+@media (max-width: 322px) {
+    .catalog {
+        &__tab {
+            font-size: 9px;
         }
     }
 }
