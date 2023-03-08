@@ -83,8 +83,9 @@ document.querySelector('.next').addEventListener('click', function () {
               }
         });
     }
+    validateForms('#consultation-form');
+    validateForms('#consultation form');
+    validateForms('#order form');
 
-    validateForms('#consultation-form')
-    validateForms('#consultation form')
-    validateForms('#order form')
+    $('input[name=phone]').mask("+7 (999) 999-99-99");
 })(jQuery);
