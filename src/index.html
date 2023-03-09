@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/tiny-slider.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -63,19 +64,19 @@
             <h2 class="title">НАШИ ПРЕИМУЩЕСТВА</h2>
             <div class="benefits__wrapper">
                 <div class="benefits__item">
-                    <img src="icons/benefits/cup.png" alt="cup">
+                    <img src="icons/benefits/cup.png" alt="cup" class="benefits__icon">
                     <div class="benefits__subtitle">Делимся опытом</div>
                     <div class="benefits__text">Наши сотрудники всегда готовы поделиться своим опытом,<br> 
                         так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</div>
                 </div>
                 <div class="benefits__item">
-                    <img src="icons/benefits/heart.png" alt="heart">
+                    <img src="icons/benefits/heart.png" alt="heart" class="benefits__icon benefits__icon_animated">
                     <div class="benefits__subtitle">Заботимся о здоровье</div>
                     <div class="benefits__text">Мы работаем для того,<br> 
                         чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!</div>
                 </div>
                 <div class="benefits__item">
-                    <img src="icons/benefits/shoe.png" alt="shoe">
+                    <img src="icons/benefits/shoe.png" alt="shoe" class="benefits__icon">
                     <div class="benefits__subtitle">Учим бегать</div>
                     <div class="benefits__text">Помогаем с обучением<br> 
                         правильной технике бега!<br> 
@@ -392,7 +393,7 @@
     <section class="reviews">
         <div class="container">
             <div class="title">отзывы клиентов</div>
-            <div class="reviews__review">
+            <div class="reviews__review animate__animated wow animate__fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
                 <div class="reviews__content">
                     <img src="img/clients/irina.png" alt="" class="reviews__photo">
                     <div class="reviews__text">
@@ -408,7 +409,7 @@
                 </div>
             </div>
 
-            <div class="reviews__review">
+            <div class="reviews__review animate__animated wow animate__fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
                 <div class="reviews__content">
                     <img src="img/clients/ivan.png" alt="" class="reviews__photo">
                     <div class="reviews__text">
@@ -422,7 +423,7 @@
                 </div>
             </div>
 
-            <div class="reviews__review">
+            <div class="reviews__review animate__animated wow animate__fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
                 <div class="reviews__content">
                     <img src="img/clients/julia.png" alt="" class="reviews__photo">
                     <div class="reviews__text">
@@ -493,11 +494,16 @@
         </div>
     </div>
 
+    <a href="#up" class="pageup">
+        <i class="fa-solid fa-circle-chevron-up"></i>
+    </a>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/tiny-slider.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
     <script src="https://kit.fontawesome.com/77e56f23e6.js" crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
